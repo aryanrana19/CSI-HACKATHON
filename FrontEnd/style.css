@@ -3,6 +3,11 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+
+body{
+    background-color: ;
+}
+
 @font-face {
     font-family: "Dongle-light";
     src: url("Dongle/Dongle-Light.ttf");
@@ -360,3 +365,80 @@ footer p{
 
 /* CARD CSS */
 
+.booking-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5356FF;
+    color: #fff;
+    font-family: "Dongle-bold";
+    margin: 10px 0px;
+    width: 35%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    transition: ease-in 0.5s;
+    visibility: hidden;
+}
+
+.booking-card:hover{
+    box-shadow: 15px 15px 10px #000;
+    transition: ease-out 0.5s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 20%;
+}
+
+.form-booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.form-booking label{
+    font-size: 36px;
+    margin: 0px;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.form-booking label:nth-of-type(1){
+    margin-top: 30px;
+}
+
+.form-booking input{
+    height: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    /* padding-left: 20px; */
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-booking select{
+    margin: 10px 20px;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.form-booking .book-btn{
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.form-booking .book-btn:hover{
+    background-color: #ff7f50;
+    color: #fff;
+    transition: ease-out 0.3s;
+}
