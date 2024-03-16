@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: ;
+    background-color: #FFF3C7;
 }
 
 @font-face {
@@ -22,16 +22,19 @@ body{
 }
 header{
     display: flex;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    position: absolute;
+    margin-top: 15px;
+    left: 20%;
+    border-radius: 20px;
+    width: 60%;
+    padding: 5px;
+    backdrop-filter: blur(1000px);
+    /* box-shadow: 0 0 10px rgba(0,0,0, 0.1); */
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.logo img{
-    /* max-width: 15%; */
-}
+
 .nav-menu ul{
  display: flex;
 }
@@ -45,12 +48,14 @@ header{
 .nav-menu a{
     text-decoration: none;
     font-family: "Dongle-bold";
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color: #333;
     transition: all ease 0.3s;
 }
 .nav-menu a:hover{
-    color: #ff7f50;
+    color: #fff;
+    text-decoration: underline;
+    transition: ease-in 0.3s;
 }
 
 .landing-section{
@@ -59,6 +64,20 @@ header{
     width: 100%;
     /* overflow: hidden; */
 }
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+  }
+
+
 .landing-image img{
     position: absolute;
     top: 0;
@@ -369,8 +388,8 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5356FF;
-    color: #fff;
+    background-color: #faa974;
+    color: #000;
     font-family: "Dongle-bold";
     margin: 10px 0px;
     width: 35%;
@@ -438,7 +457,29 @@ footer p{
 }
 
 .form-booking .book-btn:hover{
-    background-color: #ff7f50;
+    background-color: #7F50FF;
     color: #fff;
     transition: ease-out 0.3s;
+}
+
+/* Track styles */
+  
+  /* Thumb styles */
+.booking-card input[type="range"]::-webkit-slider-thumb {
+    background: #ff7f50; /* Set thumb color */
+}
+  
+  /* Fill styles (for browsers that support it, like Firefox) */
+  .booking-card input[type="range"]::-moz-range-progress {
+    background-color: #ff7f50; /* Set fill color */
+}
+  
+  /* Fill styles (for browsers that support it, like Edge) */
+  .booking-card input[type="range"]::-ms-fill-lower {
+    background-color: #ff7f50; /* Set fill color */
+}
+  
+
+.budgetValue{
+    font-size: 24px;
 }
