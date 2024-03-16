@@ -20,6 +20,9 @@ body{
     font-family: "Dongle-bold";
     src: url("Dongle/Dongle-Bold.ttf");
 }
+
+
+
 header{
     display: flex;
     position: absolute;
@@ -130,7 +133,7 @@ header{
     text-align: center;
 }
 .destinations h2{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 40px;
 }
 .destination-grid{
@@ -271,6 +274,20 @@ footer p{
     font-family: "Dongle-regular";
     font-size: 1.4rem;
 }
+
+
+.logo {
+    margin-left: 20px; /* Adjust margin as needed */
+    width: 30%; /* Adjust width as needed */
+    height: 1%; /* Adjust height as needed */
+    object-fit: contain;
+}
+
+.logo img {
+    width: 80%; /* Make sure the image fills the container */
+    height: 1%; /* Make sure the image fills the container */
+    object-fit: contain; /* Maintain aspect ratio and fit inside the container */
+}
 @media (max-width: 1177px) {
     .landing-content h1{
         line-height: 0.7;
@@ -389,6 +406,7 @@ footer p{
     align-items: center;
     justify-content: center;
     background-color: #faa974;
+    /* backdrop-filter: blur(1000px); */
     color: #000;
     font-family: "Dongle-bold";
     margin: 10px 0px;
@@ -466,20 +484,88 @@ footer p{
   
   /* Thumb styles */
 .booking-card input[type="range"]::-webkit-slider-thumb {
-    background: #ff7f50; /* Set thumb color */
+    backdrop-filter: blur(1000px); /* Set thumb color */
 }
   
   /* Fill styles (for browsers that support it, like Firefox) */
   .booking-card input[type="range"]::-moz-range-progress {
-    background-color: #ff7f50; /* Set fill color */
+    backdrop-filter: blur(1000px); backdrop-filter: blur(1000px); /* Set fill color */
 }
   
   /* Fill styles (for browsers that support it, like Edge) */
   .booking-card input[type="range"]::-ms-fill-lower {
-    background-color: #ff7f50; /* Set fill color */
+     backdrop-filter: blur(1000px); /* Set fill color */
 }
   
 
 .budgetValue{
     font-size: 24px;
+}
+/* Close button styles */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .close-btn:hover {
+    color: #7F50FF;
+  }
+
+
+/* CHATBOX */
+
+.chatbot-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    padding: 20px 10px;
+    border-radius: 100%;
+    background-color: #7F50FF;
+    color: #fff;
+}
+
+.chatbot-btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.chatbot-card{
+    width: 400px;
+}
+
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.chat-container input{
+    width: 80%;
+}
+
+.chat-container button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #faa974;
+    border-radius: 15px;
+}
+
+.chat-container button:hover{
+    background-color: #7F50FF;
+    color: #fff;
 }

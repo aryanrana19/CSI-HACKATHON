@@ -9,9 +9,9 @@
   </head>
   <body>
     <header>
-        <!-- <div class="logo">
-          <a href="#"><img src="" alt="logo" width="200px"/></a>
-        </div> -->
+        <div class="logo">
+          <a href="#"><img src="/images/logo1-removebg-preview.png" alt="logo" width="200px"/></a>
+        </div>
         <nav class="nav-menu">
           <ul>
             <li><a href="#">Home</a></li>
@@ -29,7 +29,7 @@
           <img src="https://e1.pxfuel.com/desktop-wallpaper/712/904/desktop-wallpaper-most-beautiful-travel-destinations-exotic-places.jpg"/>
         </div> -->
         <video class="video" autoplay muted loop>
-          <source src="/images/pexels-ray-raimundo-5278250 (2160p).mp4" type="video/mp4" />
+          <source src="/images/pexels-ray-raimundo-5278250 (2160p).mp4" type="video/mp4"/>
         </video>
         <div class="landing-content">
           <h1>EzGO</h1>
@@ -43,6 +43,13 @@
           
         </div>
       </section>
+
+      <section id="itinerary" class="itinerary" style="display:none;">
+        <h2>Your Itinerary</h2>
+        <ul id="itinerary-list"></ul>
+        <button class="back-btn" onclick="goBack()">Back</button>
+      </section>
+
       <!-- Destinations -->
       <section id="destinations" class="destinations">
         <h2>Popular Destinations</h2>
@@ -134,7 +141,8 @@
 
 
       <div class="booking-card" id="popup">
-        <form action="#" class="form-booking">
+        <button class="close-btn" onclick="closePopup()">X</button> <!-- Close button added -->
+        <form action="/booking" class="form-booking">
           <label for="mode-of-transport">Mode of Transport</label>
           <select name="transport" id="transport" class="transport-medium">
             <option value="#" selected disabled>Select</option>
@@ -150,19 +158,25 @@
           <span id="budgetValue" class="budgetValue">0</span>
           <label for="hobbies">Hobby</label>
           <input type="text" id="hobbies" name="hobbies">
-          <button class="book-btn" onclick="closePopup()">Show Results</button>
+          <button class="book-btn" onclick="createItinerary()">Show Results</button> <!-- Add the button here -->
         </form>
       </div>
+
+      <button class="chatbot-btn">Chatbot</button>
+
+      <div class="chatbot-card">
+        <div id="chat-container" class="chat-container">
+          <h1>CHATBOT INPUT</h1>
+          <div id="chat-messages"></div>
+          <input type="text" id="user-input" class="user-input">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+      
       
 
-      <script src="script.js"></script>
-
-
-      
+      <script src="script.js"></script>      
     </main>
   </body>
-  <script
-    src="https://kit.fontawesome.com/6558443b63.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
 </html>
