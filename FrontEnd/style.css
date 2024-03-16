@@ -49,9 +49,10 @@ header{
 }
 
 .landing-section{
-    position: relative;
+    /* position: relative; */
     height: 600px;
-    overflow: hidden;
+    width: 100%;
+    /* overflow: hidden; */
 }
 .landing-image img{
     position: absolute;
@@ -61,7 +62,6 @@ header{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .landing-content{
     position: absolute;
@@ -70,6 +70,7 @@ header{
     transform: translate(-50%,-50%);
     text-align: center;
     color: #fff;
+    width: 100%;
 }
 .landing-content h1{
     font-family: "Dongle-bold";
@@ -104,6 +105,7 @@ header{
     text-align: center;
 }
 .destinations h2{
+    margin-top: 100px;
     margin-bottom: 40px;
 }
 .destination-grid{
@@ -312,4 +314,30 @@ footer p{
     }
 }
   
-/* CARD CSS */
+/* SEARCH BAR CSS */
+
+.middle-section{
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.search-bar-1{
+    width: 20%;
+    font-size: 26px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.search-bar-2{
+    width: 20%;
+    font-size: 26px;
+}
+.search-bar-3{
+    width: 20%;
+    font-size: 26px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
