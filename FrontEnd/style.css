@@ -21,9 +21,10 @@ header{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0, 0.1);
     align-items: center;
+    justify-content: space-between;
 }
 .logo img{
-    max-width: 15%;
+    /* max-width: 15%; */
 }
 .nav-menu ul{
  display: flex;
@@ -46,12 +47,12 @@ header{
     color: #ff7f50;
 }
 
-.hero{
+.landing-section{
     position: relative;
     height: 600px;
     overflow: hidden;
 }
-.hero-image img{
+.landing-image img{
     position: absolute;
     top: 0;
     left: 0;
@@ -59,8 +60,9 @@ header{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.hero-content{
+.landing-content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -68,17 +70,19 @@ header{
     text-align: center;
     color: #fff;
 }
-.hero-content h1{
+.landing-content h1{
     font-family: "Dongle-bold";
-    font-size: 4rem;
+    font-size: 8rem;
+    padding: 0;
+    margin: 0;
 }
-.hero-content p{
+.landing-content p{
     font-family: "Dongle-regular";
-    font-size: 1.8rem;
-    margin-top: -20px;
+    font-size: 2.5rem;
+    margin-top: -60px;
     margin-bottom: 10px;
 }
-.hero-button{
+.landing-button{
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -89,7 +93,7 @@ header{
     font-size: 1.6rem;
     transition: all ease 0.3s;
 }
-.hero-button:hover{
+.landing-button:hover{
     background-color: #333;
 }
 .destinations{
@@ -240,10 +244,10 @@ footer p{
     font-size: 1.4rem;
 }
 @media (max-width: 1177px) {
-    .hero-content h1{
+    .landing-content h1{
         line-height: 0.7;
     }
-    .hero-content p{
+    .landing-content p{
         margin-top: 0;
         line-height: 0.8;
     }
@@ -255,7 +259,7 @@ footer p{
     }
 }
 @media (max-width: 768px) {
-    .hero-content h1{
+    .landing-content h1{
         margin-bottom: 5px;
     }
     .team-member img{
@@ -269,10 +273,10 @@ footer p{
     }
 }
 @media (max-width:603px){
-    .hero-content h1{
+    .landing-content h1{
         font-size: 2rem;
     }
-    .hero-content p{
+    .landing-content p{
         font-size: 1.5rem;
     }
 }
@@ -280,13 +284,13 @@ footer p{
     header{
         display: none;
     }
-    .hero-content h1{
+    .landing-content h1{
         font-size: 1.3rem;
     }
-    .hero-content p{
+    .landing-content p{
         font-size: 1rem;
     }
-    .hero-button{
+    .landing-button{
         padding: 6px 22px;
         font-size: 16px;
     }
